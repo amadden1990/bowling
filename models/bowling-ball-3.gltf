@@ -1,0 +1,155 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 515,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 515,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 515,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 515,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 515,
+      "type": "VEC3",
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 2304,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "glTF Tools for Unity",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4120
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4120,
+      "byteLength": 4120
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8240,
+      "byteLength": 6180
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14420,
+      "byteLength": 8240
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22660,
+      "byteLength": 6180
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 28840,
+      "byteLength": 4608
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "bowling-ball-3.bin",
+      "byteLength": 33448
+    }
+  ],
+  "images": [
+    {
+      "uri": "bowling-ball-3_baseColor.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "TEXCOORD_1": 1,
+            "NORMAL": 2,
+            "TANGENT": 3,
+            "POSITION": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "Sphere"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "ballTexture"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "scale": [
+        0.3175964,
+        0.3175964,
+        0.3175964
+      ],
+      "translation": [
+        12.454,
+        0.611,
+        -17.179
+      ],
+      "name": "bowling-ball-3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ]
+}
