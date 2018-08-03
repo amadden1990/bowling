@@ -1,0 +1,143 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 108,
+      "type": "VEC3",
+      "max": [
+        3.12939858,
+        0.112802908,
+        7.3861866
+      ],
+      "min": [
+        -3.14615273,
+        -0.17296195,
+        -6.486166
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 222,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "glTF Tools for Unity",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 864
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 864,
+      "byteLength": 1296
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2160,
+      "byteLength": 1728
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3888,
+      "byteLength": 1296
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5184,
+      "byteLength": 444
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "bowling-alley-left.bin",
+      "byteLength": 5628
+    }
+  ],
+  "images": [
+    {
+      "uri": "bowling-alley-left_baseColor.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "Merged_Meshes"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6070304,
+          0.6070304,
+          0.6070304,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "Standard"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        12.37,
+        0.0,
+        -6.93
+      ],
+      "name": "bowling-alley-left"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ]
+}
