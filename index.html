@@ -19,7 +19,7 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <a-mixin id="bowling-alley-left-mixin" gltf-model="#bowling-alley-left"></a-mixin>
 
 <a-asset-item id="bowling-ball-2" src="models\/bowling-ball-2.gltf"></a-asset-item>
-<a-mixin id="bowling-ball-2-mixin" gltf-model="#bowling-ball-2" collapse-model></a-mixin>
+<a-mixin id="bowling-ball-2-mixin" gltf-model="#bowling-ball-2" collapse-model scale="0.3175964 0.3175964 0.3175964"></a-mixin>
 <a-mixin id="ball-to-hand" n-skeleton-parent="part: hand; side: right;" sync sync-n-skeleton-parent></a-mixin>
 
 <a-asset-item id="bowling-alley-right" src="models\/bowling-alley-right.gltf"></a-asset-item>
@@ -27,8 +27,6 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 
 
 </a-assets>
-
-<a-entity position="11.99 2.22 -17.09" rotation="0 89.99984 0" scale="5.707629 5.707629 5.707629" n-layout-browser='isEnclosure:true; url:http://www.jumpstartsdk.com/live/AirHockey.html;'></a-entity>
 <a-entity position="-1.01 2.7 -13.72" rotation="0 90 0" scale="5.809085 5.809085 5.809085" n-layout-browser='isEnclosure:true; url:http://video-jukebox.firebaseapp.com;'></a-entity>
 
  
@@ -246,7 +244,7 @@ false; cast: false;" >
 <a-entity n-gltf='url:models\/Rack-1.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-4.gltf'></a-entity><a-entity n-gltf='url:models\/Rack-2.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-1.gltf'></a-entity><a-entity mixin="bowling-alley-left-mixin" ></a-entity>
 
 <a-entity mixin="bowling-ball-2-mixin" ></a-entity>
-<a-entity id="ball-instantiator" mixin="bowling-ball-2-mixin" instantiator="on: click; mixin: bowling-ball-2-mixin ball-to-hand" position="0 0 0"></a-entity>
+<a-entity id="ball-instantiator" mixin="bowling-ball-2-mixin" instantiator="on: click; mixin: bowling-ball-2-mixin ball-to-hand"></a-entity>
 
 
 <a-entity n-gltf='url:models\/bowling-ball-3.gltf'></a-entity><a-entity mixin="bowling-alley-right-mixin" ></a-entity>
