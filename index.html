@@ -3,7 +3,7 @@
 https://aframe.io/releases/0.7.0/aframe.min.js"></script><script src="
 https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <body>
-<a-scene altspace="fullspace: true">
+<a-scene altspace="fullspace: true" sync-system="author: anthony; app: test-bowling-sync">
 <a-assets>
 <img id="oldDoor" src="textures\oldDoor.jpg">
 <img id="brickWall" src="textures\brickWall.jpg">
@@ -17,6 +17,11 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <img id="darkCarpet" src="textures\darkCarpet.jpg">
 <a-asset-item id="bowling-alley-left" src="models\/bowling-alley-left.gltf"></a-asset-item>
 <a-mixin id="bowling-alley-left-mixin" gltf-model="#bowling-alley-left"></a-mixin>
+
+<a-asset-item id="bowling-ball-2" src="models\/bowling-ball-2.gltf"></a-asset-item>
+<a-mixin id="bowling-ball-2-mixin" gltf-model="#bowling-ball-2"></a-mixin>
+<a-mixin id="ball-to-hand" n-skeleton-parent="part: hand; side: right;" sync sync-n-skeleton-parent></a-mixin>
+
 <a-asset-item id="bowling-alley-right" src="models\/bowling-alley-right.gltf"></a-asset-item>
 <a-mixin id="bowling-alley-right-mixin" gltf-model="#bowling-alley-right"></a-mixin>
 
@@ -238,7 +243,13 @@ standard; transparent: false; color: #222222;  side: front; " shadow="receive:
 false; cast: false;" >
 </a-entity>
 
-<a-entity n-gltf='url:models\/Rack-1.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-4.gltf'></a-entity><a-entity n-gltf='url:models\/Rack-2.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-1.gltf'></a-entity><a-entity mixin="bowling-alley-left-mixin" ></a-entity><a-entity n-gltf='url:models\/bowling-ball-2.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-3.gltf'></a-entity><a-entity mixin="bowling-alley-right-mixin" ></a-entity>
+<a-entity n-gltf='url:models\/Rack-1.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-4.gltf'></a-entity><a-entity n-gltf='url:models\/Rack-2.gltf'></a-entity><a-entity n-gltf='url:models\/bowling-ball-1.gltf'></a-entity><a-entity mixin="bowling-alley-left-mixin" ></a-entity>
+
+<a-entity mixin="bowling-ball-2-mixin" ></a-entity>
+<a-entity id="ball-instantiator" mixin="bowling-ball-2-mixin" instantiator="on: click; mixin: bowling-ball-2-mixin ball-to-hand" position="0 0 0"></a-entity>
+
+
+<a-entity n-gltf='url:models\/bowling-ball-3.gltf'></a-entity><a-entity mixin="bowling-alley-right-mixin" ></a-entity>
 
 
 </a-scene>
