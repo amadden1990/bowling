@@ -117,8 +117,8 @@
         "baseColorTexture": {
           "index": 0
         },
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.5
+        "metallicFactor": 0.101676524,
+        "roughnessFactor": 0.200999975
       },
       "name": "ballTexture"
     }
